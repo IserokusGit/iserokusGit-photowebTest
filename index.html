@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A quiet collection of landscape, street, and portrait photography.">
+  <meta name="theme-color" content="#11110f">
+  <meta property="og:title" content="Aperture — Photography Portfolio">
+  <meta property="og:description" content="Stories held in light, distance, and the spaces between.">
+  <meta property="og:type" content="website">
+  <title>Aperture — Photography Portfolio</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="photos.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to photographs</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Aperture, home">Aperture<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Mist settling between dark mountain ridges"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Selected photographs · 2023–2026</p>
+        <h1 id="hero-title">Stories held<br>in the light.</h1>
+        <p class="hero-intro">Landscape, people, and the fleeting quiet in between.</p>
+        <a class="text-link light" href="#work">Explore the collection <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-index" aria-hidden="true">01 / 12</p>
+    </section>
+
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Portfolio</p><h2 id="work-title">Selected work</h2></div>
+        <p>A study of place, presence, and passing time.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter photographs">
+        <button class="filter active" data-filter="All" aria-pressed="true">All</button>
+        <button class="filter" data-filter="Landscape" aria-pressed="false">Landscape</button>
+        <button class="filter" data-filter="Street" aria-pressed="false">Street</button>
+        <button class="filter" data-filter="Portrait" aria-pressed="false">Portrait</button>
+        <button class="filter" data-filter="Details" aria-pressed="false">Details</button>
+      </div>
+      <div class="gallery" id="gallery" aria-live="polite"></div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="about-photo" role="img" aria-label="Photographer standing beside the sea"></div>
+      <div class="about-copy">
+        <p class="eyebrow">Behind the lens</p>
+        <h2 id="about-title">Hello, I’m<br>Your Name.</h2>
+        <p class="lead">I photograph the moments that ask us to slow down—the way late light falls across a room, a familiar face in an unfamiliar city, the stillness before weather arrives.</p>
+        <p>This portfolio is a living archive of the places I’ve wandered and the people I’ve met. Every frame is made with patience, curiosity, and an eye for honest detail.</p>
+        <p class="note">Based in Your City · Available worldwide</p>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">Let’s make something</p>
+      <h2 id="contact-title">Have a story<br>worth telling?</h2>
+      <p>For commissions, print enquiries, collaborations, or just to say hello.</p>
+      <a class="email-link" href="mailto:hello@yourdomain.com">hello@yourdomain.com <span aria-hidden="true">↗</span></a>
+      <div class="socials" aria-label="Social links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.threads.net/" target="_blank" rel="noreferrer">Threads</a>
+        <a href="https://www.flickr.com/" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top">Aperture<span>.</span></a><p>© <span id="year"></span> Your Name. All photographs reserved.</p><a href="#top">Back to top ↑</a></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lightbox-close" aria-label="Close viewer">Close ×</button>
+    <button class="lightbox-nav prev" aria-label="Previous photograph">←</button>
+    <figure><img id="lightbox-image" alt=""><figcaption><span id="lightbox-title"></span><span id="lightbox-count"></span></figcaption></figure>
+    <button class="lightbox-nav next" aria-label="Next photograph">→</button>
+  </dialog>
+</body>
+</html>
