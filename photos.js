@@ -5,7 +5,7 @@
    orientation can be: portrait, landscape, square, or tall.
 */
 window.PORTFOLIO_PHOTOS = [
-  { src: "MyPhotos/9FEA0696-E656-4460-A4EE-FE1E27952D5E.jpeg", title: "Still Morning", category: "Portrait", alt: "Sunrise together. One more moment to remember", orientation: "portrait" },
+  { src: "MyPhotos/9FEA0696-E656-4460-A4EE-FE1E27952D5E.jpeg", title: "Still Morning", category: "Portrait", alt: "Sunrise together. One more moment to remember", orientation: "square" },
   { src: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=88", title: "Above the City", category: "Street", alt: "Aerial view of city blocks and streets", orientation: "portrait" },
   { src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=88", title: "Sunday Light", category: "Portrait", alt: "Portrait of a man in soft window light", orientation: "portrait" },
   { src: "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1600&q=88", title: "Northbound", category: "Landscape", alt: "Forest reflected in a remote lake", orientation: "landscape" },
